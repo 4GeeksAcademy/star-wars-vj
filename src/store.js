@@ -1,32 +1,46 @@
 export const initialStore=()=>{
   return{
-    message: null,
-    todos: [
-      {
-        id: 1,
-        title: "Make the bed",
-        background: null,
-      },
-      {
-        id: 2,
-        title: "Do my homework",
-        background: null,
-      }
-    ]
+    people: [],
+    planets: [],
+    vehicles: [],
+    favorites: []
   }
 }
 
 export default function storeReducer(store, action = {}) {
   switch(action.type){
-    case 'add_task':
 
-      const { id,  color } = action.payload
+    // get people
+    case 'get_people':
 
       return {
         ...store,
-        todos: store.todos.map((todo) => (todo.id === id ? { ...todo, background: color } : todo))
+        people: action.payload
       };
+
+      // get planets
+      case 'get_planets':
+
+      return {
+        ...store,
+        planets: action.payload
+      };
+
+      // get vehicles
+      case 'get_vehicles':
+
+      return {
+        ...store,
+        vehicles: action.payload
+      };
+
+      case "add_favorite":
+        return {
+          ...store,
+          favorites: [...favorites, action.payload]
+        }
+
     default:
-      throw Error('Unknown action.');
+      return store
   }    
 }
