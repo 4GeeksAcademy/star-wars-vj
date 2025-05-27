@@ -24,13 +24,17 @@ export const Single = props => {
   useEffect(() => {
 
     handleGetElement(typeElement, idElement)
+    
+    
 
   }, [idElement, typeElement])
 
   return (
     <div className="container text-center">
       {/* Display the title of the todo element dynamically retrieved from the store using theId. */}
-      <h1>Vista de detalle</h1>
+      <h1>Vista de detalle
+        
+      </h1>
 
       <hr className="my-4" />  {/* A horizontal rule for visual separation. */}
 

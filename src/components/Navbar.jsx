@@ -10,6 +10,7 @@ export const Navbar = () => {
 			<div className="container">
 				<Link to="/">
 					<span className="navbar-brand mb-0 h1">
+						<h5>¿La Guerra de las Galaxias?</h5>
 						{/* <img src="https://cdn.freebiesupply.com/logos/large/2x/star-wars-logo-png-transparent.png"/> */}
 					</span>
 				</Link>
