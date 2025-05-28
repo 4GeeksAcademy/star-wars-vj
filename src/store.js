@@ -34,11 +34,19 @@ export default function storeReducer(store, action = {}) {
         vehicles: action.payload
       };
 
-      case "add_favorite":
-        return {
-          ...store,
-          favorites: [...favorites, action.payload]
-        }
+    case "add_favorite":
+  return {
+    ...store,
+    favorites: [...store.favorites, action.payload]
+  };
+
+  case "update_favorites":
+  return {
+    ...store,
+    favorites: action.payload
+  };
+
+        
 
     default:
       return store
