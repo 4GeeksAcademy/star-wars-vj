@@ -29,7 +29,7 @@ export const Home = () => {
 		<div className="mt-5">
 
 			{/* CHARACTERS */}
-			<h2>Characters</h2>
+			<h2 className="Characters" style={{color: "#FFD000"}}>Characters</h2>
 			<div>
 				<ul className="d-flex">
 					{
@@ -46,7 +46,7 @@ export const Home = () => {
 			</div>
 
 			{/* PLANETS */}
-			<h2>Planets</h2>
+			<h2 className="Planets" style={{color: "#FFD000"}}>Planets</h2>
 			<div>
 				<ul className="d-flex">
 					{
@@ -63,7 +63,7 @@ export const Home = () => {
 			</div>
 
 			{/* VEHICLES */}
-			<h2>Vehicles</h2>
+			<h2 className="Vehicles" style={{color: "#FFD000"}}>Vehicles</h2>
 			<div>
 				<ul className="d-flex">
 					{

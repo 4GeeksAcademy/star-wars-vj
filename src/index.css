@@ -1,6 +1,6 @@
 body {
     width: 100vw;
-    height: ;
+    background-color: black;
 }
 
 .card {
@@ -11,4 +11,42 @@ body {
 
 ul {
     list-style-type: none;
+}
+
+.Characters, .Vehicles, .Planets {
+    margin-left: 50px;
+}
+
+/* single.css */
+.single-card {
+  background-color: black;
+  color: white;
+  border: 2px solid #FFD700;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  margin-bottom: 1rem;
+}
+
+.single-card-img {
+  border-right: 2px solid #FFD700;
+  height: 100%;
+  object-fit: cover;
+  padding: 0.5rem;
+}
+
+.single-card-title {
+  color: #FFD700;
+  font-family: 'Star Jedi', 'Arial', sans-serif;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #FFD700;
+  padding-bottom: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.single-card-text {
+  line-height: 2;
+}
+
+.single-card-property {
+  color: #FFD700;
 }
